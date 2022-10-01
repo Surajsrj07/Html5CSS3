@@ -1,0 +1,9 @@
+Positioning Properties
+
+
+
+1)Static    Default
+2)Relative    -->LRTB it is always relative to the parent
+3)Absolute    -->LRTB it is been connected to main document
+4)Fixed
+5)Static    
