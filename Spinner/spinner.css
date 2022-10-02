@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner{
+    height: 30px;
+    width: 30px;
+    border: 4px solid lightgreen;
+    border-top:4px solid white;
+    border-radius: 50%;
+    transition-property: transform;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg); ;
+    }
+
+    to{
+        transform:rotate(360deg); ;
+
+    }
+}
+
+
+.text{
+    position: absolute;
+    font-weight: bold;
+    top: 55%;
+}
