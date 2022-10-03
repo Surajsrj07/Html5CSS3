@@ -30,7 +30,8 @@ span{
    color: black;
    height: 20px;
    width: 20px;
-   left: 382px;
+   left: 379px;
+   text-align: center;
 }
 
 span:hover{
