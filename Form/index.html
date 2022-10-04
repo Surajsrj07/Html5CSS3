@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Elements</title>
+</head>
+<body>
+
+    
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" value="name" placeholder="Type your Name">
+        <br></br>
+
+        <label for="password">Password</label>
+        <input type="password" minlength="5" maxlength="10">
+        <br></br>
+
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" >
+        <br></br>
+
+        <label for="gender">Select your Gender</label>
+        <label><input type="radio" name="gender">Male</label>
+        <label><input type="radio" name="gender">Female</label>
+
+        <br></br>
+
+
+        <label for="date">Email ID</label>
+        <input type="email" name="email"  placeholder="enter your email-id" minlength="3" maxlength="25" required>
+        <br></br>
+
+        <label for="file"></label>
+        <input type="file" name="file" multiple>
+        <br></br>
+
+        <label> Select Any program</label>
+        <label ><input type="checkbox" >C</label>
+        <label ><input type="checkbox" >PYTHON</label>
+        <br></br>
+
+        
+        <select name="Select your Language" >
+          <option value="#">English</option>
+          <option value="#">Tamil</option>
+          <option value="#">Kannada</option>
+          <option value="#">Hindi</option>
+
+        </select>
+
+        <br></br>
+
+        <input type="number" min="0" max="10" step="2">
+        <br></br>
+
+        <input type="range" min="20" max="100">
+        <br></br>
+
+        <label for="Choose your fav color"></label>
+        <input type="color">
+        <br></br>
+
+          
+        <label for="checkbox"></label>
+        <input type="checkbox" required>I Agree to terms & conditions
+        <br></br>
+         
+        
+        <input type="submit">
+        <input type="reset" value="Clear">
+
+
+    </form>
+    
+</body>
+</html>
