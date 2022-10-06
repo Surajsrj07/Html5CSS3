@@ -48,18 +48,12 @@ p{
     color: black;
 }
 
-ul li a:hover, ul li a:focus{
-    position: relative;
-    transform: scale(1.25);
-    z-index: 99;
-
-}
-
 
 ul li:nth-child(2n) a{
     position: relative;
     background-color: #70a1ff;
     top: 20px;
+    left:5px;
     transform: rotate(8deg);
 
 
@@ -68,6 +62,7 @@ ul li:nth-child(1) a{
      position: relative;
      background-color: aquamarine;
      top: 20px;
+     left:5px;
      transform: rotate(25deg);
 
 
@@ -80,6 +75,14 @@ ul li:nth-child(8n) a{
     transform: rotate(25deg);
     
 }
+
+ul li a:hover,ul li a:focus{
+    position: relative;
+    transform: scale(1.25);
+    z-index: 99;
+
+}
+
 
 a span{
     display: block;
