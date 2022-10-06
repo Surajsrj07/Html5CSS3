@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' ,sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color:#CBCBCA ;
+    padding: 30px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul li a{
+    width: 150px;
+    height: 150px;
+    display: block;
+    text-decoration: none;
+    background-color: #F9CA24;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    transform: rotate(-8deg);
+    transition: transform 0.2s linear;
+}
+
+h3{
+    font-size: 17px;
+    color: tomato;
+}
+
+p{
+    font-size: 15px;
+    color: black;
+}
+
+ul li a:hover, ul li a:focus{
+    position: relative;
+    transform: scale(1.25);
+    z-index: 99;
+
+}
+
+
+ul li:nth-child(2n) a{
+    position: relative;
+    background-color: #70a1ff;
+    top: 20px;
+    transform: rotate(8deg);
+
+
+}
+ul li:nth-child(1) a{
+     position: relative;
+     background-color: aquamarine;
+     top: 20px;
+     transform: rotate(25deg);
+
+
+}
+
+ul li:nth-child(8n) a{
+    position: relative;
+    background-color: #ff7f50;
+    top:20px;
+    transform: rotate(25deg);
+    
+}
+
+a span{
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    background-image: url('./images/cancel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
