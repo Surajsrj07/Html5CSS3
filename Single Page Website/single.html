@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,86 @@
     <title>Single Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <section  id="home">
+    <section id="home">
         <header>
-            <a href="#"><img src="./images/logo.png" alt=""></a>
+            <a href=""><img src="images/logo.png" alt=""></a>
             <ul id="menu">
-                 <li><a href="#home">Home</a></li>
-                 <li><a href="#service">Service</a></li>
-                 <li><a href="#pricing">Pricing</a></li>
-                 <li><a href="#product">Product</a></li>
-                 <li><a href="#contact">Contact</a></li>
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
 
             </ul>
+
+            <div class="search">
+                <input type="text" id="txtsearch" placeholder="search text here...">
+                <img src="./images/search.png" alt="">
+            </div>
         </header>
     </section>
 
-    <section  id="service">
+    <section id="service">
         <h2>Service</h2>
     </section>
 
-    <section  id="pricing">
+    <section id="pricing">
         <h2>Pricing</h2>
     </section>
 
-    <section  id="product">
+    <section id="product">
         <h2>Product</h2>
     </section>
 
-    <section  id="contact">
-        <h2>Contact</h2>
+    <section id="contact">
+        <div class="contact-box">
+            <h2>Contact Form</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="">Your Name</label></td>
+                        <td><input type="text" placeholder="Your Name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="">Your Email</label></td>
+                        <td><input type="email" placeholder="Your email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="">Email Subject</label></td>
+                        <td><input type="text" placeholder="Type your subject name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="">2+5=</label></td>
+                        <td><input type="text" placeholder="Your Correct response"></td>
+                    </tr>
+
+                    <tr class="txtarea">
+                        <td colspan="2">
+                            <label for="">Your Message</label>
+                            <textarea></textarea>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <button class="sendbtn">Send Email</button>
+                            <button class="sendbtn">Clear</button>
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </section>
 
 </body>
+
 </html>

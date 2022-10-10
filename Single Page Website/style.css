@@ -1,43 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins',sans-serif;
 }
 
 section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    color: white;
 }
 
-#home{background-color:#3B3B98;}
-#service{background-color:#58B19F ;}
-#pricing{background-color:#82589F ;}
-#product{background-color:#BDC581 ;}
-#contact{background-color:#FC427B ;}
 
 header{
     width: 100%;
-    background-color: red;
+    height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: black;
     align-items: center;
-    padding: 10px;
+    position: fixed;
 }
+
+h2{
+    font-weight: normal;
+}
+
+#service,#pricing,#product,#contact{
+    padding-top: 70px;
+}
+
+#home{background-color:#3B3B98;}
+#service{background-color:#EAB543 ;}
+#pricing{background-color:#55E6C1 ;}
+#product{background-color:#25CCF7 ;}
+
+#contact{
+    background-color:#FC427B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #menu li{
     list-style: none;
     display: inline-block;
-    margin-left: 20px;
 }
 
 #menu li a{
     text-decoration: none;
+    padding-left: 20px;
     color: white;
-    
+}
+
+
+#txtsearch{
+    width: 250px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.search{
+    display: flex;
+}
+
+
+.contact-box{
+    width: 700px;
+    min-height:400px ;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: rgba(59, 5, 5, 0.223);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-box h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    letter-spacing: 1px;
+}
+
+.contact-box table{
+    width: 100%;
+}
+
+.contact-box table td{
+    padding:10px 20px;
+}
+
+.contact-box table td input{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+
+.txtarea label,
+.txtarea textarea{
+    display: block;
+}
+
+.txtarea td textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.sendbtn{
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    color: #FC427B;
+    border:none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
 }
