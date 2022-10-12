@@ -20,6 +20,7 @@ section{
     color: white;
 }
 
+/* Nav section */
 
 header{
     width: 100%;
@@ -78,6 +79,8 @@ h2{
 .search{
     display: flex;
 }
+
+/* Home page */
 
 .home-box{
    width: 100%;
@@ -159,14 +162,98 @@ h2{
     width: 130px;
     height: 30px;
     margin-top: 10px;
-    border: none;
+    border: 3px solid goldenrod;    
     border-radius: 3px;
-    background-color: goldenrod;
+    background-color: transparent;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: orangered;
 }
 
+/* Service Section */
+
+#service h2, #service h2+p{
+    text-align: center;
+}
+
+#service h2{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+.card{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-box{
+    width: 300px;
+    height: 450px;
+    margin-left: 25px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+
+
+}
+
+.card-box:hover{
+    transform: scale(1.2);
+}
+
+
+.content{
+    padding: 10px;
+}
+
+.content h3{
+    padding: 10px;
+    border-bottom: 1px solid rgb(67, 53, 53);
+}
+
+.content p{
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+.image{
+ width: 100%;
+ height: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5px;
+}
+
+.card-box:nth-child(1) .image{
+background-color: #0984e3;
+}
+
+.card-box:nth-child(2) .image{
+background-color:orangered ;    
+}
+
+.card-box:nth-child(3) .image{
+background-color: #55efc4;   
+}
+
+.card-box:nth-child(4) .image{
+background-color: #e84393;  
+}
+
+
+/* Contact section */
 
 .contact-box{
     width: 700px;
