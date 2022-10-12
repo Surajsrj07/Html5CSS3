@@ -20,7 +20,7 @@ section{
     color: white;
 }
 
-/* Nav section */
+/* Navbar section */
 
 header{
     width: 100%;
@@ -57,13 +57,32 @@ h2{
 #menu li{
     list-style: none;
     display: inline-block;
+    margin-left: 20px;
 }
 
 #menu li a{
     text-decoration: none;
-    padding-left: 20px;
     color: white;
+    position: relative;
 }
+
+/* Hover effects for Header */
+
+#menu li a::before{
+    content: "";
+    background-color: red;
+    width:0px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px; 
+    transition: all 0.5s ease;  
+}
+
+#menu li a:hover::before{
+    width: 100%;
+}
+
+
 
 
 #txtsearch{
