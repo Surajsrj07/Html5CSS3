@@ -53,7 +53,7 @@ h2 {
 }
 
 #pricing {
-    background-color: #55E6C1;
+    background-color: #2A2932;
 }
 
 #product {
@@ -240,6 +240,7 @@ h2 {
 #service h2,
 #service h2+p {
     text-align: center;
+    margin-top: 10px;
 }
 
 #service h2 {
@@ -318,6 +319,84 @@ h2 {
     background-color: #e84393;
 }
 
+/* Pricing Section */
+
+#pricing h2{
+    text-align: center;
+    margin:10px;
+}
+
+#pricing h2+p{
+    text-align: center;
+    margin:15px;
+
+}
+
+.box-holder{
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 350px;
+    height: 500px;
+    margin-left: 30px;
+}
+
+.bg1{background-color: #583AB9 ;}
+.bg2{background-color: #91C704 ;}
+.bg3{background-color: #EB6010 ;}
+
+
+.box .box-title h5{
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.box .box-title h3{
+    font-size: 35px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.box .box-title p{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.box-content{
+    color: rgb(110, 70, 70);
+    background-color: white;
+}
+
+.box-content ul{
+    list-style: none;
+    padding: 25px 25px;
+}
+
+.box-content ul li{
+    font-size: 15px;
+    padding: 5px 0px;
+    text-align: left;
+    text-indent: 25%;
+}
+
+.box-content a{
+    background-color: #EC6011;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+}
 
 /* Contact section */
 
