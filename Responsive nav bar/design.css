@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #006266;   
+}
+
+.logo{
+    color: burlywood;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-bar ul{
+display: flex;
+gap: 30px;
+}
+
+.menu-bar ul li a{
+    color: whitesmoke !important;
+    letter-spacing: 1px;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+@media(max-width:992px){
+    .menu-bar{
+        display: none;
+    } 
+
+    .hamburger{
+        display: block;
+    }
+
+}
+
+.hamburger{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+}
+
+.hamburger::before,
+.hamburger .bar,
+.hamburger::after
+{
+content: '';
+width: 100%;
+height: 2px;
+display: block;
+background-color: white;
+margin: 6px 0px;
+border-radius: 2px;
+transition: 0.5s;
+}
