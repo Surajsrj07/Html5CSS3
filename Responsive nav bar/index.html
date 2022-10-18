@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,46 @@
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="design.css">
 </head>
+
 <body>
     <div class="wrapper">
-    <header class="main-header">
-        <div class="logo">
-            Cognibuzz
-        </div> 
-        <div class="menu-bar">
-            <ul>
+        <header class="main-header">
+            <div class="logo">
+                Cognibuzz
+            </div>
+            <div class="desk-nav">
+                <ul class="links">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Product</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Login</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                </ul>
+            </div>
+
+            <button class="hamburger">
+                <span class="bar"></span>
+            </button>
+        </header>
+
+
+        <div class="mob-nav">
+                
+            <ul class="links">
                 <li><a href="#">Home</a> </li>
                 <li><a href="#">Product</a> </li>
                 <li><a href="#">About Us</a> </li>
                 <li><a href="#">Login</a> </li>
                 <li><a href="#">Contact</a> </li>
-            </ul> 
+            </ul>
+
         </div>
 
-        <button class="hamburger">
-            <span class="bar"></span>
-        </button>
-    </header>
+    </div>
 
-</div>
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>
