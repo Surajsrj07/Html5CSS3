@@ -25,7 +25,8 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #006266;   
+    background-color: #006266; 
+    position: sticky;  
 }
 
 .logo{
@@ -93,20 +94,7 @@ transition: 0.5s;
   gap: 15px;
 }
 
-@media(max-width:992px){
-    .desk-nav{
-        display: none;
-    } 
 
-    .hamburger{
-        display: block;
-    }
-    
-    .mob-nav{
-        display: block;
-    }
-   
-}
 
 .hamburger.is-active .bar{
     opacity: 0;
@@ -122,4 +110,54 @@ transition: 0.5s;
 
 .mob-nav.is-active{
     right: 0%;
+}
+
+.banner{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-image: url('./images/off.jpg');
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    filter: contrast(1.2);
+}
+
+.banner h1{
+    color: tan;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+@media(max-width:992px){
+    .desk-nav{
+        display: none;
+    } 
+
+    .hamburger{
+        display: block;
+    }
+    
+    .mob-nav{
+        display: block;
+    }
+  
+   .banner h1{
+    font-size: 35px;
+   }
+
+   .banner{
+    background-image: url('./images/mobile.jpg');
+   }
 }
