@@ -101,6 +101,7 @@ button{
     color: #333333;
     line-height: 20px;
     text-align: justify;
+    font-size: 14px;
 }
 
 .follow h3{
@@ -113,8 +114,9 @@ button{
     color: #A9A9B1;
 }
 
-h1+p{
+h2+p{
     color: #A9A9B1;
+    font-size: 14px;
 }
 
 .content .dots{
