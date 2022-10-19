@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    width: 100vw;
+    height: 100vh;
+    background-color: #7227D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 900px;
+    height:460px;
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.form,
+.img{
+    width: 50%;
+}
+
+.image{
+    width: 50%;
+    height: 100%;  
+    background-image: url('./images/office-gc39b6526d_1920.jpg');
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: hwb(266 15% 16% / 0.344);
+}
+
+.overlay h4{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+h4+p{
+    color: white;
+    font-size: 14px;
+}
+
+
+.form{
+   padding: 60px 25px;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.form h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+.form h3::before{
+    content: '';
+    width: 28px;
+    height: 3px;
+    background-color: #7227D5;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    border-radius: 2px;
+}
+
+.fa{
+    color: #7227D5;
+    position: absolute;
+    top: 9px;
+    font-size: 20px !important;
+}
+
+.input-field{
+    width: 100%;
+    background-color: red;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input{
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.256);
+}
+
+input::placeholder{
+    font-family: 'Poppins', sans-serif !important; 
+}
+
+.input-field+a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #7227D5;
+    margin-bottom: 35px;
+
+}
+
+button{
+    width: 100%;
+    height: 50px ;
+    font-size: 18px;
+    color: white;
+    background-color: #7227D5;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+button+p{
+    font-size: 14px;
+    text-align: center;
+}
+
+button+p a{
+    text-decoration: none;
+    color: #7227D5;
+}
