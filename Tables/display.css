@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.table{
+    width: 600px;
+    display: table;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+.col{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px 30px; 
+    font-size: 20px;
+}
+
+.row{
+    display: table-row;
+}
+
+.caption{
+    display: table-caption;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: brown;
+    }
+    
+.header{
+    display: table-header-group;
+    color: aliceblue;
+    background-color: orangered;
+    font-weight: 28px;
+    font-weight: 800;
+}
+
+.footer{
+    display: table-footer-group;
+    color: white;
+    background-color: brown;
+}
+
+.row-group{
+    display: table-row-group;
+}
+
+
+.col-group{
+    display: table-column-group;
+}
+
+.tab-col{
+    display: table-column;
+}
+
+.col-2{
+    width: 80px;
+    background-color:gold !important;
+}
+
+/* 
+table
+table-row
+table-column
+table-row-group
+table-column-group
+table-header-group
+table-footer-group
+table-caption
+ */
