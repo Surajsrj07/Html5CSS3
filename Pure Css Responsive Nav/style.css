@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    background-color: orangered;
+    width: 100%;
+    height: 80px;
+    user-select: none;
+}
+
+section{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(./images/sunrise.jpg);
+}
+
+section h1{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+section p{
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.logo{
+color: whitesmoke;
+font-size: 25px;
+padding: 0px 100px;
+font-weight: 600;
+line-height: 80px;  
+}
+
+nav ul{
+    float:right;
+    margin-right: 30px;
+    
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    min-width: 100px;
+    line-height: 80px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+
+nav ul li:hover{
+    background-color: #2f3640;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
