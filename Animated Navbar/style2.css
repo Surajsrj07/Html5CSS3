@@ -36,7 +36,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: weight;
     color:rgba(128, 128, 128, 0.666) ;
 }
 
