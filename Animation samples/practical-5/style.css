@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
 
+
+:root{
+    --bgcolor:orangered;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ body {
 
 
 .btn{
-    background-color: #badc58;
+    background-color: var(--bgcolor);
     padding: 10px 30px;
     font-size: 20px;
     font-weight: 600;
@@ -31,19 +35,19 @@ body {
 .btn::after{
     content: "";
     position: absolute;
-    width: 0px;
+    width: 25px;
     transition: 0.4s ease-in-out;
 }
 
 .btn::before{
-  border-top: 4px solid #badc58 ;
+  border-top: 4px solid var(--bgcolor) ;
   top:-8px;
   left: 0;
 }
 
 
 .btn::after{
-    border-bottom: 4px solid #badc58 ;
+    border-bottom: 4px solid var(--bgcolor) ;
     bottom:-8px;
     right: 0;
 }
