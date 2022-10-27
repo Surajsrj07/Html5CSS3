@@ -31,7 +31,7 @@ body {
 .btn::after{
     content: "";
     position: absolute;
-    width: 15px;
+    width: 0px;
     transition: 0.4s ease-in-out;
 }
 
