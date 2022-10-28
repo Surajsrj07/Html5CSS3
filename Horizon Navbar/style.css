@@ -106,8 +106,9 @@ header {
         top: 100%;
         left: 0;
         right: 0;
-        display: none;
         transition: 0.5s;
+        transform-origin: top;
+        transform: scaleY(0);
     }
     
     .navbar ul li{
@@ -126,8 +127,7 @@ header {
 
 
     #toggle:checked ~ .navbar{
-        display: block;
-     
+        transform: scaleY(1);
     }
 
     .btn{
