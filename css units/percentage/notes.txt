@@ -5,11 +5,18 @@ px
 Relative unit
 
 %   -value
+-----------
 em  -depends on the parent
 1em = 16px *1 = 16
 2em = 32px *2 = 32
 3em = 30px *3 = 30
-rem
+
+----------------------
+rem -depends on the root
+1.browser
+2.html{
+    
+}
 
 vh -viewport height
 vw -viewport width
