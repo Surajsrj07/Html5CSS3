@@ -1,0 +1,24 @@
+Absolute unit
+
+px
+--------------------
+Relative unit
+
+%   -value
+em  -depends on the parent
+1em = 16px *1 = 16
+2em = 32px *2 = 32
+3em = 30px *3 = 30
+rem
+
+vh -viewport height
+vw -viewport width
+
+
+1.Font size
+2.Height
+3.Width
+--------------------
+
+1920 x 1080
+Width : Height

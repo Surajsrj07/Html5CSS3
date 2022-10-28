@@ -1,0 +1,23 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+/* %  is  used in child only*/
+
+.box{
+   width: 33.33%;
+   height: 50%;
+   background-color: orangered;
+   float: left;
+   border: 5px solid black;
+   font-size: 25px;
+   color: white;
+}
