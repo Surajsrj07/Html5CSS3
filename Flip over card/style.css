@@ -19,9 +19,18 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #b2bec3;
+   
+}
+
+.container{
+    margin: 100px auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    width: 1000px;
+
 }
 
 .card{
@@ -29,6 +38,7 @@ body{
     min-height: 400px;
     position: relative;
     margin: 0px 20px;
+    user-select: none;
 }
 
 .card-content{
@@ -74,6 +84,11 @@ body{
     transition: 0.5s;
 }
 
+.front .img img:hover{
+    transform: scale(1.2);
+}
+
+
 .front{
     display: flex;
     flex-direction: column;
@@ -85,6 +100,7 @@ body{
     margin: 10px 0px;
     text-transform: uppercase;
     font-size: 16px;
+    text-align: center;
 }
 
 .front p{
@@ -155,5 +171,36 @@ body{
     }
   
   
+.back table{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    margin-top: 50%;
+}
+
+.back table th{
+    font-weight: 500;
+}
+
+.back table th,
+.back table td{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
 
+@media (max-width:768px) {
+    .container{
+        margin: 20px;
+
+        width: 80%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card{
+        width: 100%;
+    }
+
+}
