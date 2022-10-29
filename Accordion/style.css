@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #487eb0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box li{
+    width: 100%;
+}
+
+.box li label{
+    background-color: #636e72;
+    padding: 5px 5px;
+    color: aliceblue;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.box li .content{
+    background-color:#dfe6e9;
+    padding:0 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    line-height: 30px;
+    max-height: 0;
+    overflow: hidden;
+    
+}
+
+ion-icon{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.box li input[type="radio"]:checked ~ .content{
+    max-height: 400px;
+}
+
+.box li input[type="radio"]:checked ~ label ion-icon{
+    transform: rotate(90deg);
+}
