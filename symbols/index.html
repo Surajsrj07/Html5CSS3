@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symbols</title>
+    <style>
+        div+p{
+            color: blue;
+        }
+
+        .parent>p{
+            color: red;
+        }
+
+        .parent>p ~ .child{
+            color: yellowgreen;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>This is > direct child</p>
+        <div class="child">This is para div p</div>
+        <div class="child">This is para div p</div>
+        <div class="child">This is para div p</div>
+    </div>
+    <p>This is + adjacent </p>
+</body>
+</html>
