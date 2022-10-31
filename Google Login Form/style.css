@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 400px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 6px;
+    padding: 32px;
+}
+
+.form img{
+    display: block;
+    margin: auto;
+}
+
+.form h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.form-group{
+    height: 48px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.form-control{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bababa;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px;
+    z-index: 1;
+    background: none;
+}
+
+.form-label{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    font-size: 14px;
+    font-size: 13px;
+    background-color: white;
+    color: #bdb0b0;
+    padding: 0px 6px;
+    transition: 0.4s;
+}
+
+.form-control:focus+.form-label{
+    top: -10px;
+    z-index: 10;
+    color: #4885ED;
+    font-weight: 500;
+ }
+
+ 
+.form-control:focus{
+    border: 1px solid #4885ED ;
+}
+
+.form-control:not(focus):valid+.form-label{
+    top: -10px;
+    z-index: 10;
+}
+
+.showlabel{
+    font-size: 14px;
+}
+
+.bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: 4885ED !important;
+    font-weight: 500;
+}
+
+.form-button{
+    display: block;
+    padding: 12px 32px;
+    border: none;
+    background-color: #4885ED;
+    color: white;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+} 
+
+.form-button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
