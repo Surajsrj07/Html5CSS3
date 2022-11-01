@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav main aside'
+    'footer footer footer' 
+    ;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px  1fr 100px; 
+    grid-template-areas:
+        'nav'
+        'header'
+        'aside content'
+        'aside aside aside'
+        'footer'
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+
+
+/* header,
+main,
+nav,
+aside,
+footer{
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+} */
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav'
+    'header header header'
+    'aside main main'
+    'aside1 aside2 aside3'
+    'footer footer footer'
+    ;
+    grid-template-rows:50px 150px 1fr 200px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav,
+header,
+aside,
+main,
+footer{
+    border: 1px solid gray;
+}
+
+
+nav{
+    background-color:#FDFBDA ;
+    padding: 30px;
+    grid-area: nav;
+}
+
+header{
+    background-color:#FEE0FE ;
+    padding: 30px;
+    grid-area: header;
+
+}
+
+
+.aside-left{
+    background-color:#D8FAFE ;
+    padding: 30px;
+    grid-area: aside; 
+}
+
+main{
+    background-color: #DCDDFF;
+    padding: 30px;
+    grid-area: main; 
+
+}
+
+.aside1{
+    background-color: #D5BBB8;
+    padding: 30px;
+    grid-area: aside1; 
+
+}
+
+.aside2{
+    background-color: #B0CAB2;
+    padding: 30px;
+    grid-area: aside2; 
+
+}
+
+.aside3{
+    background-color: #B2B3CE;
+    padding: 30px;
+    grid-area: aside3; 
+
+}
+
+footer{
+    background-color: #A1A1A1;
+    padding: 30px;
+    grid-area: footer;
+}

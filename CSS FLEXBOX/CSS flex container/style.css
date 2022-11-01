@@ -125,7 +125,7 @@ align-content: center; */
 /* ----------------------------------------- */
 
 /*ALIGN-SELF*/
-/* height:400px ;
+height:400px ;
 flex-direction: row;
 align-items: stretch;
 
@@ -146,7 +146,7 @@ align-items: stretch;
 }
 .box-5{
     align-self: auto;
- */
+
 
 }
 
