@@ -124,9 +124,33 @@ align-content: center; */
 
 /* ----------------------------------------- */
 
+/*ALIGN-SELF*/
+/* height:400px ;
+flex-direction: row;
+align-items: stretch;
 
 }
 
+.box-1{
+  align-self: stretch;
+}
+
+.box-2{
+    align-self: flex-start;
+}
+.box-3{
+    align-self: flex-end;
+}
+.box-4{
+    align-self: center;
+}
+.box-5{
+    align-self: auto;
+ */
+
+}
+
+/* ------------------------------------------- */
 
 /* order */
 
