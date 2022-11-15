@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --correct: #C5F2C8;
+    --wrong: #F2D0C1;
+    --correct-text: #246712;
+    --wrong-text: #EE3E25;
+
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.form-checkbox {
+    display: block;
+    user-select: none;
+}
+
+.input-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #342168;
+    border-radius: 3px;
+}
+
+
+.input-checkbox label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.input-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.input-checkbox input[type="checkbox"]:checked::before {
+    content: '';
+    font-size: 26px;
+    font-weight: 800;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.correct-checkbox input[type="checkbox"]:checked::before {
+    content: '\2713';
+    color: var(--correct-text);
+
+}
+
+
+.wrong-checkbox input[type="checkbox"]:checked::before {
+    content: '\2715';
+    color: var(--wrong-text);
+
+}
+
+
+.correct-checkbox input[type="checkbox"]:checked {
+
+    background-color: var(--correct);
+    border: 2px solid var(--correct);
+}
+
+
+.wrong-checkbox input[type="checkbox"]:checked {
+    background-color: var(--wrong);
+    border: 2px solid var(--wrong);
+}
+
+
+
+.correct-checkbox input[type="checkbox"]:checked+label {
+
+    color: var(--correct-text);
+}
+
+
+.wrong-checkbox input[type="checkbox"]:checked+label {
+    color: var(--wrong-text);
+}
