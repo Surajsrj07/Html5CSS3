@@ -34,7 +34,7 @@
     overflow: hidden;
     pointer-events: none;
   }
-  .bg .fog img {
+  .fog img {
     position: absolute;
     bottom: 0;
     max-width: 100%;
