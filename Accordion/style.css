@@ -50,6 +50,7 @@ body{
     line-height: 30px;
     max-height: 0;
     overflow: hidden;
+    transition: 0.2 ease ;
     
 }
 
@@ -69,3 +70,4 @@ input[type="radio"]{
 .box li input[type="radio"]:checked ~ label ion-icon{
     transform: rotate(90deg);
 }
+
