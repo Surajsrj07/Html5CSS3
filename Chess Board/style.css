@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #636e72;
+}
+
+body{
+    background-color: white;
+    height: 720px;
+    width: 720px;
+    margin: 10px auto;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.square{
+    width: 90px;
+    height: 90px;
+    float: left;
+    font-size: 60px;
+    text-align: center;
+    user-select: none;
+}
+
+.black{
+    background-color: #c7ecee;
+}
+
