@@ -1,3 +1,3 @@
 const text = document.getElementById("txt");
 
-text.scroll
+text.scroll=document.getAnimations
