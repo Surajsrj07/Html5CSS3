@@ -30,6 +30,10 @@ body{
     user-select: none;
 }
 
+.square:hover{
+    background-color: #EE5A24;
+}
+
 .black{
     background-color: #c7ecee;
 }
