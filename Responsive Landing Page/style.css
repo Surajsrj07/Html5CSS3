@@ -240,21 +240,23 @@ nav {
    
 }
 
+
 .project .box-2{
     position: absolute;
-    width: 100%;
-    height: 500px;
-    background-color: #f8a5c2;
+    width: 350px;
+    height: 250px;
+    background-color:var(--themecolor);
     left: 0;
-    bottom: 0;
+    bottom:50px;
+   
 }
 
-.project .col-2 .img-box{
+ .project .col-2 .img-box{
     position: absolute;
     width: 500px;
     height: 500px;
     background-image: url(./images/Project.jpg);
     background-size: cover;
-    top:150px;
-    right: 120px;
-}
+    top: 150px;
+    left: 60px;
+ }
