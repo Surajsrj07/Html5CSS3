@@ -1,33 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-section{
+:root {
+    --themecolor: #ff4d4d;
+}
+
+section {
     width: 100%;
-    height:100vh;
+    height: 100vh;
 }
 
-.header{
-  background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/Homepage.jpg)
+/*------------------ Header------------------  */
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/Homepage.jpg);
+    position: relative;
+
 }
 
-nav{
+/*-------------------Navbar------------------- */
+
+nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 15px 50px;
+    align-items: baseline;
+
+}
+
+/* -----------------------logo---------------------- */
+
+.header nav .logo {
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header nav .logo span {
+    font-size: 18px;
+    color: var(--themecolor);
+    font-weight: 700;
 }
 
 
+/* ----------------Navbar Menus--------------------- */
 
 
+.header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .navbar ul li {
+    padding: 10px 30px;
+
+}
+
+.header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.header .navbar ul li:hover a {
+    color: var(--themecolor);
+}
 
 
-.btn-show{
+/* -------------------Link-Button------------------ */
+
+.link-btn {
+    background-color: var(--themecolor);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.link-btn:hover {
+    background-color: white;
+    color: var(--themecolor);
+}
+
+.btn-show {
     display: none;
+}
+
+/* ----------------------banner------------------------ */
+
+
+.header .banner {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    color: white;
+    padding-left: 50px;
+}
+
+.header .banner h1 {
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+
+.header .banner h1 span {
+    color: var(--themecolor);
+    font-weight: 800;
+
+}
+
+.header .banner p {
+    margin: 30px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ---------------------Services-------------------- */
+
+
+.header .services {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .services .service {
+    padding: 20px;
+}
+
+.header .services .service h3 {
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.header .services .service p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    margin: 15px 0;
+
+}
+
+.header .services .service a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.header .services .service:nth-child(1) {
+    background-color: #262826;
+}
+
+.header .services .service:nth-child(1) h3,
+.header .services .service:nth-child(1) a {
+    color: white;
+}
+
+.header .services .service:nth-child(1) p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .services .service:nth-child(2) {
+    background-color: #f1f2f6;
+}
+
+.header .services .service:nth-child(3) {
+    background-color: #ffffff;
 }
