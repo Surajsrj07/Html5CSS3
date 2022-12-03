@@ -26,7 +26,6 @@ section {
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/Homepage.jpg);
     position: relative;
-
 }
 
 /*-------------------Navbar------------------- */
@@ -260,3 +259,74 @@ nav {
     top: 150px;
     left: 60px;
  }
+
+
+ .project .top-page{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: var(--themecolor);
+    padding: 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+ }
+
+ .project .top-page.active{
+
+    display: block;
+
+ }
+
+
+ .project .top-page a{
+    text-decoration: none;
+    color: white;
+ }
+
+
+ /* --------------------Trend----------------------- */
+
+ .trend{
+    background-color: var(--themecolor);
+    overflow: hidden;
+    
+ }
+ 
+
+ .trend .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .trend .row h3{
+    padding-top: 100px;
+    color: white;
+    font-weight: 600;
+    font-size: 28px;
+ }
+ 
+ .trend .row p{
+    padding-top: 40px;
+    color: rgba(255,255,255,0.6);
+    line-height: 30px;
+    text-align: center;
+ }
+
+
+.trend .img-trend{
+    width: 800px;
+    height: 400px;
+    margin: 40px 0;
+}
+
+.trend .img-trend img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
