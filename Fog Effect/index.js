@@ -1,5 +1,11 @@
-const text = document.getElementById("txt");
+let text = document.querySelector("#text");
 
-text.scroll=document.getAnimations("hire");
+window.addEventListener('scroll',()=>{
+    
+    let value =window.scrollY;
 
-getComputedStyle
+    text.style.fontSize=value*1+"px";
+
+});
+
+
