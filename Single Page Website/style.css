@@ -27,7 +27,7 @@ header {
     height: 70px;
     display: flex;
     justify-content: space-around;
-    background-color: #2C3E50;
+    background-color: #25315dd8;
     align-items: center;
     position: fixed;
     z-index: 99;
