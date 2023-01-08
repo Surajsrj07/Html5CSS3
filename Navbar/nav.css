@@ -14,7 +14,7 @@ body{
 .container{
     width: 100vw;
     height: 100vh; 
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('./images/sunrise.jpg');
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./images/sunrise.jpg');
 
 }
 
