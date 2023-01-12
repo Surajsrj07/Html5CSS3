@@ -18,7 +18,7 @@ body{
 .main{
     width: 500px;
     height: 500px;
-    border: 5px solid gray;
+    border: 5px solid black;
     background-color: white;
     position: relative;
 }
