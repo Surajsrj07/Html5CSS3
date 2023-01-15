@@ -26,7 +26,7 @@ ul{
 
 ul li a{
     width: 150px;
-    height: 150px;
+    min-height: 150px;
     display: block;
     text-decoration: none;
     background-color: #F9CA24;
